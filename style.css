@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  background: url(./assets/img-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--gray-light, #F3F4FE);
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  width: 30.625rem;
+  height: 22.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content h1 {
+  color: var(--gray-light, #F3F4FE);
+  font-family: Space Grotesk;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+
+  background: var(--linear, linear-gradient(90deg, #DEE0FC 0%, #996DFF 51.04%, #BC9FFF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 350px;
+  margin-bottom: 2rem;
+}
+
+label {
+  color: var(--gray-light, #F3F4FE);
+
+  font-family: Space Grotesk;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+
+  text-transform: uppercase;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--gray-light, #F3F4FE);
+  padding: 1rem 0.75rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: var(--gray-dark, #202024);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+
+  background: var(--gray-light, #F3F4FE);
+}
+
+input::placeholder {
+  color: var(--gray-dark, #202024);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+#success-message {
+  color: var(--gray-light, #F3F4FE);
+  font-family: Space Grotesk;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+#error {
+  color: var(--danger, #FF8F8F);
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+
+  display: none;
+}
+
+button {
+  display: flex;
+  padding: 22px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  background: var(--purple-normal, #8860E6);
+  cursor: pointer;
+
+  color: var(--neutral-colors-white, #FFF);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.ticket {
+  display: flex;
+  background-image: url('/assets/bg-card-ticket.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 43.375rem;
+  height: 25.54rem;
+}
+
+.ticket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.813rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.781rem;
+  background: var(--gray-light, #F3F4FE);
+  color: var(--gray-dark, #202024);
+}
+
+.user-ticket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.user-ticket-info span {
+  color: var(--purple-normal, #8860E6);
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 15px */
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+}
+
+.user-ticket-info h1 {
+  color: var(--gray-dark, #202024);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 20px */
+}
+
+.user-ticket-info img {
+  width: 7.938rem;
+  height: 8rem;
+  border-radius: 63.5px;
+}
+
+.event-ticket-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.313rem;
+}
+
+.event-ticket-info span {
+  color: var(--gray-dark, #202024);
+  font-family: Space Grotesk;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+}
+
+.event-ticket-info span:nth-child(2) {
+  color: var(--gray-dark, #202024);
+  font-family: Space Grotesk;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 160% */
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Ticket</title>
+
+  <script src="./main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>gere seu ticket e compartilhe com o mundo</h1>
+
+      <label for="username">Digite seu usuário do GitHub</label>
+
+      <div class="input" id="input-camp">
+        <img src="assets/github-logo.svg" alt="" id="icon">
+
+        <input type="text" id="username" placeholder="Nome de usuário"
+        autocomplete="off" autocapitalize="off">
+        <span id="#success-message">ticket gerado com sucesso</span>
+      </div>
+
+      <span id="error">Usuário inválido. Verifique e tente novamente</span>
+      <button>GERAR MEU TICKET</button>
+      
+    </div>
+
+    <div class="ticket">
+      <div class="ticket-container">
+        <img src="assets/img-ticket.svg" alt="">
+
+        <div class="info">
+          <div class="user-ticket-info">
+            <img src="assets/img-avatar.svg" alt="" id="photo">
+
+            <span>TRIPULANTE</span>
+
+            <h1 id="name">Seu nome aqui</h1>
+          </div>
+        
+
+          <div class="event-ticket-info">
+            <span>EVENTO</span>
+            <span>IA PRA DEVS</span>
+          </div>
+          
+          <div class="event-ticket-info">
+            <span>DATA</span>
+            <span>14 - 16 AGO. 2023</span>
+          </div>
+
+          <div class="event-ticket-info">
+            <span>HORA</span>
+            <span>AO VIVO - 19H</span>
+          </div>
+
+          <img src="assets/lines.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
